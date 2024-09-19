@@ -16,11 +16,11 @@ npm install --legacy-peer-deps
 # Use AWS Secrets service for setting env variables in prod;
 file_location=./.env
 cat >$file_location <<EOF
-REGION="eu-central-1"
+REGION="us-east-1"
 TABLE_AUTOCREATE="true"
 TABLE_AUTOUPDATE="false"
-DEVELOPMENT="false"
-APP_NAME="Shop"
+DEVELOPMENT="true"
+APP_NAME="shop"
 EOF
 
 npm run build
